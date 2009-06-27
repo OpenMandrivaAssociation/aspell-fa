@@ -4,7 +4,7 @@
 # NOTE: the word list wrongly uses arabic kaf instead of farsi kaf,
 # it is fixed trough a script in the make section (pablo)
 
-%define src_ver 0.02-0
+%define src_ver 0.11-0
 %define fname aspell6-%{languagecode}
 %define aspell_ver 0.60
 %define languageenglazy Persian
@@ -13,8 +13,8 @@
 
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
-Version:       0.02.0
-Release:       %mkrel 6
+Version:       0.11.0
+Release:       %mkrel 1
 Group:         System/Internationalization
 Source:        http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/%{fname}-%{src_ver}.tar.bz2
 URL:		   http://aspell.net/
