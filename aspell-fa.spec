@@ -14,7 +14,7 @@
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
 Version:       0.11.0
-Release:       %mkrel 1
+Release:       %mkrel 2
 Group:         System/Internationalization
 Source:        http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/%{fname}-%{src_ver}.tar.bz2
 URL:		   http://aspell.net/
