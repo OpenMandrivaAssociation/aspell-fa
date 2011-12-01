@@ -56,14 +56,14 @@ preunzip -c %{languagecode}.cwl | sh ./fixkaf.sh | (LC_ALL=C sort) > %{languagec
 aspell  --lang=%{languagecode} create master ./%{languagecode}.rws < %{languagecode}.wl
 
 %install
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 
 %makeinstall_std
 
 chmod 644 Copyright README* 
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 
 %files
 %defattr(-,root,root)
